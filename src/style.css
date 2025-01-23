@@ -1,0 +1,15 @@
+#minimap_islands_layer {
+  .ghost-town {
+    color: rgb(152 163 12) !important;
+    font-size: 35px !important;
+    text-shadow:
+      2px 0 #fff,
+      -2px 0 #fff,
+      0 2px #fff,
+      0 -2px #fff,
+      1px 1px #fff,
+      -1px -1px #fff,
+      1px -1px #fff,
+      -1px 1px #fff;
+  }
+}

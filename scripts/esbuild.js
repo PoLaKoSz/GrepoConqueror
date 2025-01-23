@@ -25,11 +25,13 @@ build({
   plugins: [
     copy({
       "./src/meta.js": [`./dist/${name}.meta.js`, `./dist/${name}-dev.meta.js`],
+      "./src/style.css": [`./dist/${name}.css`],
     }),
     textReplace({
       filePaths: [`./dist/${name}-dev.meta.js`],
       patterns: {
         __dev_javascript__: `file:${path.join(path.resolve(__dirname, ".."), "dist", `${name}-dev.user.js`)}`,
+        "IMPORTED_CSS .*": `IMPORTED_CSS file:${path.join(path.resolve(__dirname, ".."), "dist", `${name}.css`)}`,
         __public_name__: "__public_name__ (dev)",
         "// @downloadURL.*\n": "",
         "// @supportURL.*\n": "",
