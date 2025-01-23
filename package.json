@@ -1,0 +1,26 @@
+{
+  "author": "Tom PoLáKoSz",
+  "bugs": {
+    "url": "https://github.com/PoLaKoSz/GrepoConqueror/issues"
+  },
+  "description": "Become Grepolis most feared conqueror with features provided by this mighty script.",
+  "devDependencies": {
+    "esbuild": "^0.24.2",
+    "prettier": "^3.4.2"
+  },
+  "homepage": "https://github.com/PoLaKoSz/GrepoConqueror",
+  "icon": "https://gphu.innogamescdn.com/images/game/start/favicon.ico",
+  "license": "GPL-3.0-only",
+  "main": "src/index.js",
+  "name": "grepo-conqueror",
+  "prettier": {},
+  "repository": {
+    "distDirectory": "https://raw.githubusercontent.com/PoLaKoSz/GrepoConqueror/refs/heads/main/dist",
+    "type": "git",
+    "url": "git+https://github.com/PoLaKoSz/GrepoConqueror.git"
+  },
+  "scripts": {
+    "build": "node scripts/esbuild.js"
+  },
+  "version": "0.1.0"
+}
